@@ -1,0 +1,10 @@
+[Unit]
+Description=RS45 Bot
+
+[Service]
+ExecStart=bash /root/bot/bot.sh
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
